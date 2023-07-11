@@ -24,6 +24,13 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  opacity: 0.7;
+}
+.-header .main .navbar .navbar-collapse .navbar-nav li a:hover {
+  opacity: 1;
+}
+.-header .main .navbar .navbar-collapse .navbar-nav li a.active {
+  opacity: 1;
 }
 .-header .main .navbar .navbar-collapse .navbar-nav li a.active::before {
   content: "";
@@ -90,6 +97,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   text-decoration: none;
+  cursor: pointer;
 }
 .main-zone .pic-card a img {
   width: 100%;
@@ -200,10 +208,6 @@ body {
     margin: 10px;
     font-size: 15px;
     transition: ease-in-out 0.3s;
-    opacity: 0.8;
-  }
-  .-header .main .navbar .navbar-collapse .navbar-nav li a:hover {
-    opacity: 1;
   }
   .main-content {
     width: calc(100% - 17em);
