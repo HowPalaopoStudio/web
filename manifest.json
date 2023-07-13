@@ -1,0 +1,36 @@
+{
+    "short_name": "Palaopo Studio",
+    "name": "Palaopo Studio",
+    "icons": [
+        {
+            "src": "icon@x48.png",
+            "type": "img/app-icons/icon@x48.png",
+            "sizes": "48 × 48"
+        },
+        {
+            "src": "img/app-icons/icon@x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/app-icons/icon@x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "img/app-icons/icon@x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/app-icons/icon@x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "https://howpalaopostudio.github.io/web/",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "display": "standalone"
+}
