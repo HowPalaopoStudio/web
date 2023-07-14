@@ -12,7 +12,38 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/app-icons/icon@x144.png"/>
     <link rel="apple-touch-icon" sizes="192x192" href="img/app-icons/icon@x192.png"/>
     <link rel="apple-touch-icon" sizes="512x512" href="img/app-icons/icon@x512.png" />
-    <link rel="apple-touch-startup-image" href="img/share.jpg"/>
+    <!-- PWA settings for ios splashscreens -->
+    <link href="img/splashscreens/iphone5_splash.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/iphone6_splash.png"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/iphoneplus_splash.png"
+        media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/iphonex_splash.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/iphonexr_splash.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/iphonexsmax_splash.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/ipad_splash.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/ipadpro1_splash.png"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/ipadpro3_splash.png"
+        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="img/splashscreens/ipadpro2_splash.png"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+
     <meta name="apple-mobile-web-app-title" content="Palaopo Studio" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
@@ -168,22 +199,38 @@
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-xl-3 pic-card" data-aos="fade-up">
                             <a href="video-production.html">
-                                <img src="img/home/home_1.jpg" alt="PALAOPO STUDIO - video production" />
+                                <picture>
+                                    <source type="image/webp" srcset="img/home/home_1.webp">
+                                    <source type="image/jpeg" srcset="img/home/home_1.jpg">
+                                    <img src="img/home/home_1.jpg" alt="PALAOPO STUDIO - video production" />
+                                </picture>
                             </a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-6 col-xl-3 pic-card" data-aos="fade-up">
                             <a href="visual-strategies.html">
-                                <img src="img/home/home_2.jpg" alt="PALAOPO STUDIO - visual strategies" />
+                                <picture>
+                                    <source type="image/webp" srcset="img/home/home_2.webp">
+                                    <source type="image/jpeg" srcset="img/home/home_2.jpg">
+                                    <img src="img/home/home_2.jpg" alt="PALAOPO STUDIO - visual strategies" />
+                                </picture>
                             </a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-6 col-xl-3 pic-card" data-aos="fade-up">
                             <a href="logo-design.html">
-                                <img src="img/home/home_3.jpg" alt="PALAOPO STUDIO - logo design" />
+                                <picture>
+                                    <source type="image/webp" srcset="img/home/home_3.webp">
+                                    <source type="image/jpeg" srcset="img/home/home_3.jpg">
+                                    <img src="img/home/home_3.jpg" alt="PALAOPO STUDIO - logo design" />
+                                </picture>
                             </a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-6 col-xl-3 pic-card" data-aos="fade-up">
                             <a href="commissions.html">
-                                <img src="img/home/home_4.jpg" alt="PALAOPO STUDIO - commercial photography" />
+                                <picture>
+                                    <source type="image/webp" srcset="img/home/home_4.webp">
+                                    <source type="image/jpeg" srcset="img/home/home_4.jpg">
+                                    <img src="img/home/home_4.jpg" alt="PALAOPO STUDIO - commercial photography" />
+                                </picture>
                             </a>
                         </div>
                     </div>

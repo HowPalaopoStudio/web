@@ -1,35 +1,48 @@
-self.addEventListener('install', function (event) {
-    self.skipWaiting();
+// 定義要緩存的資源清單
+const cacheName = 'my-cache';
+const resourcesToCache = [
+    'index.html',
+    'video-production.html',
+    'visual-strategies.html',
+    'logo-design.html',
+    'commissions.html',
+    'css/bootstrap.min.css',
+    'css/style.css',
+    'js/bootstrap.min.js',
+    'js/app.js',
+    'img/logo.webp',
+    // 其他要緩存的檔案路徑
+];
 
-    var offlinePage = new Request('offline.html');
+// 安裝 Service Worker
+self.addEventListener('install', event => {
     event.waitUntil(
-        fetch(offlinePage).then(function (response) {
-            return caches.open('offline2').then(function (cache) {
-                return cache.put(offlinePage, response);
-            });
-        }));
-}); self.addEventListener('fetch', function (event) {
+        caches.open(cacheName)
+            .then(cache => {
+                return cache.addAll(resourcesToCache);
+            })
+    );
+});
+
+// 啟用 Service Worker
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys()
+            .then(cacheNames => {
+                return Promise.all(
+                    cacheNames.filter(name => name !== cacheName)
+                        .map(name => caches.delete(name))
+                );
+            })
+    );
+});
+
+// 攔截網路請求
+self.addEventListener('fetch', event => {
     event.respondWith(
-        fetch(event.request).catch(function (error) {
-            return caches.open('offline2').then(function (cache) {
-                return cache.match('offline.html');
-            });
-        }));
-}); self.addEventListener('refreshOffline', function (response) {
-    return caches.open('offline2').then(function (cache) {
-        return cache.put(offlinePage, response);
-    });
-}); self.addEventListener('push', function (event) {
-    var data = event.data.json(); var opts = {
-        body: data.body,
-        icon: data.icon,
-        data: {
-            url: data.url
-        }
-    };
-    event.waitUntil(self.registration.showNotification(data.title, opts));
-}); self.addEventListener('notificationclick', function (event) {
-    var data = event.notification.data; event.notification.close(); event.waitUntil(
-        clients.openWindow(data.url)
+        caches.match(event.request)
+            .then(response => {
+                return response || fetch(event.request);
+            })
     );
 });
