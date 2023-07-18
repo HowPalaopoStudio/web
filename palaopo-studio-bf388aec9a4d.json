@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "palaopo-studio",
+  "private_key_id": "bf388aec9a4d792aa8614b6107e25b9314c8e238",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkGOj4SIyjl7kV\nxZUFu8GSxWof3gQRWHuS2n2vfQwwnps0uGIg+1UiTuFUqCT3Xd5PikfWo/qZ2ctI\n/YzAPcm3kwTcdLVa4t/CtOAodWvmUk4I8Ac2WdR8q32uEqFyi9AYe3mm35GzU6Bg\nZWDMoCzq4b6dhmJ0lIR9S2f8ILi7neo7dWFPvhxYhPShpREOU1OEqMyIcbpnR5P4\nwhnXbz/irf9IQVnUsJ1xlo08HigaDtSXz90OKLNLG8bM2nmE0fwITeLdN0DEIG7Q\ns8i65QZVjwcD5KHJY1YcpHurekBqh+X31VPmSijQmwHw3PWtkiR6IlGoU6kVubL9\n7a6rutHVAgMBAAECggEAAJC8myZjPakNkGXW4DP7NCgNkcCJ33MGy5G78lMKK+mD\nLvvq2QkLDD9puiK+LEM2VRKf5SOf5TabFn998NrScbLfxtBFuhajOLnqaWYS+H8u\nGT/I3PoTdL6Bt1jSSS4lvTMOHAutjKJsIG9MLxUaMoQs/1pYLbI/s2k2f+evW0FS\naPV0x0Hv+H7fCDUaWZgrJLeMiHL1XAzgUjFCZV6sfvxHutwFitc41poWQ0z1L3ol\nJ67tB3F0gsdOFxcOKVVvEsoMFXcslp1AtJECrxRwb4mZKwWTqpAti/oL9GFC2ukD\ngknmz4wlJ5z+x2U30H/CrVJT4PhuoE4E8aS23fYGPQKBgQDkmTZMKkRWs+NKFCto\nbBFaLjjxRnz2JeA3/fc0xEsgjnOFOcx8bQqyqzllVwOVDVqQDsi0pHVqp/WiCv0N\nAW+CnTdM7cxzxO/nyWXmkuUDwmOMQwDEFTMDRU32B82geD4wGTjR1SJpnlujVZIj\nOg5i1vAnisIckFi70oAc2SUn9wKBgQC3xGkaO5DeUkYkOlT5PwitR5fvNr3iLS60\nVYO1bKDChXXBGPEfF2tTgYRPXQfiJUWT3YOEDf+GDFe5SJ2mHraXGKQ4nQqZFZdW\nB2ZQtSAT1ZGfsNp4MCup9t0P7R+MBmP93Brr50G1CitsrPty22TyEZ4YxXbL2wnW\nrGHhU4BZkwKBgCQS4XSnft1HyehYwnjaBOr8PFQm0XVuiLGNTENxboGWuTge5NwF\nwRhs2MPbNV+CGfZ9vsJy6WyJUMPfhAtXXKd5884aAJeMTmd/aqs2JxmuxVLPCAHp\nboFnoGPg21wlXXrtn//M6H9OVBu0Vzlj4f1K+d7jkLo9NSN+lmT3B1wFAoGAO01h\n0XpZdLU+N2CvnUNvLGQHLsYOnteP09goybpFYqCo8Gh5H1xyYR9RsD7IVX1Lp7z7\nPPk7dWm0QXGilkIhED9+d1qOWfpyvOtkZDUfJedsuAjdZ5276XxluEcAQDKrv/dw\npKIbPS4L92UXO+h6+fcfesT2YjDMSv+UEp/csosCgYEAhE+lybAjZsxLWSrkDUmV\nN5cCUGTzDWmmyfApzElT0UNYqxLsmypmEB+OBagMobMmazSsd44Z6Q9dnYV6huAo\nRntEn7jpyxVKN0MGcRx54+UEWaeOidjCtt4pa7+W8yLa4P5ebGiyuRiVsg2NiEvu\nygJHnUbIlKt0sLQ1HhrC8Lk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "palaopo-seo@palaopo-studio.iam.gserviceaccount.com",
+  "client_id": "112558579492936972723",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/palaopo-seo%40palaopo-studio.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
