@@ -1,7 +1,7 @@
 {
    "name": "Palaopo Studio",
     "short_name": "Palaopo Studio",
-    "description": "台中影像製作工作室「怕老婆工作室」「Palaopo Studio」，平面服務項目：平面設計、整體產品形象規劃、臉書經營、Logo Desigr、Cis規劃、宣傳海報製作、Banner Design 動態影像服務項目：活動紀錄、婚禮紀錄、工商形象影片、空拍素材、影片後製、與各類商業影像拍攝、Youtube頻道企劃、Youtube頻道拍攝、Youtube頻道剪輯、短影音製作。如有需要委託製作，歡迎詢問。",
+    "description": "台中影像製作工作室「怕老婆工作室」「Palaopo Studio」，平面服務項目：平面設計、整體產品形象規劃、臉書經營、Logo Design、Cis規劃、宣傳海報製作、Banner Design 動態影像服務項目：活動紀錄、婚禮紀錄、工商形象影片、空拍素材、影片後製、與各類商業影像拍攝、Youtube頻道企劃、Youtube頻道拍攝、Youtube頻道剪輯、短影音製作。如有需要委託製作，歡迎詢問。",
     "start_url": "https://howpalaopostudio.github.io/web/",
     "display": "standalone",
     "background_color": "#000000",
@@ -11,8 +11,8 @@
         {
             "src": "icon@x48.png",
             "type": "img/app-icons/icon@x48.png",
-            "sizes": "48x48",
-            "purpose": "any maskable"
+            "sizes": "48x48"
+          
         },
         {
             "src": "img/app-icons/icon@x96.png",
@@ -23,8 +23,8 @@
         {
             "src": "img/app-icons/icon@x144.png",
             "type": "image/png",
-            "sizes": "144x144",
-            "purpose": "any maskable"
+            "sizes": "144x144"
+   
         },
         {
             "src": "img/app-icons/icon@x192.png",
@@ -35,8 +35,8 @@
         {
             "src": "img/app-icons/icon@x512.png",
             "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
+            "sizes": "512x512"
+
         }
     ]
    
