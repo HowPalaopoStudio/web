@@ -21,6 +21,7 @@ self.addEventListener('install', event => {
             .then(cache => {
                 return cache.addAll(resourcesToCache);
             })
+            .then(() => self.skipWaiting()) // 立即激活 Service Worker
     );
 });
 
@@ -34,6 +35,7 @@ self.addEventListener('activate', event => {
                         .map(name => caches.delete(name))
                 );
             })
+            .then(() => self.clients.claim()) // 立即控制所有頁面
     );
 });
 
@@ -42,7 +44,12 @@ self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
             .then(response => {
-                return response || fetch(event.request);
-            })
+            // 監聽新的 Service Worker 是否可用，如果可用，更新快取
+            if (response) {
+              return response;
+            }
+    
+            return fetch(event.request);
+          })
     );
 });
