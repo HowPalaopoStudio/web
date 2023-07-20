@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /video-production.html
+Allow: /visual-strategies.html
+Allow: /commissions.html
+
+Sitemap: https://howpalaopostudio.github.io/web/sitemap.xml
