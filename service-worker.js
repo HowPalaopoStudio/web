@@ -42,14 +42,15 @@ self.addEventListener('activate', event => {
 // 攔截網路請求
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-            // 監聽新的 Service Worker 是否可用，如果可用，更新快取
-            if (response) {
-              return response;
-            }
-    
-            return fetch(event.request);
-          })
+        caches.open(cacheName).then(cache => {
+            return cache.match(event.request).then(response => {
+                const fetchPromise = fetch(event.request).then(networkResponse => {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+
+                return response || fetchPromise;
+            });
+        })
     );
 });
