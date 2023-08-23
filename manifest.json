@@ -9,8 +9,8 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "icon@x48.png",
-            "type": "img/app-icons/icon@x48.png",
+            "src": "img/app-icons/icon@x48.png",
+            "type": "image/png",
             "sizes": "48x48"
           
         },
@@ -18,7 +18,6 @@
             "src": "img/app-icons/icon@x96.png",
             "type": "image/png",
             "sizes": "96x96",
-            "purpose": "any maskable"
         },
         {
             "src": "img/app-icons/icon@x144.png",
